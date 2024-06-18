@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+</head>
+<style>
+    body{
+        background-image: radial-gradient(red 5%, yellow 15%, rgb(240,25,31) 60%);
+    }
+    #box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        width: 33%;
+        margin: auto;
+        height: auto;
+        border-radius: 7px;
+        background-color: rgb(244,244,244);
+    }
+    h1{
+        text-align: center;
+    }
+    label{
+        font-size: 18px;
+        
+    }
+    .input1{
+        width: 400px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 7px;
+    }
+    .round{
+        font-size: 30px;
+    }
+
+    .input2{
+        width: 400px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 7px;
+    }
+    #sub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    #box div{
+        padding:20px 0px 20px 0px;
+        background-color: rgb(244,244,244);
+    }
+    .submit1{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(35, 206, 35);
+        color: white;
+        border-radius: 7px;
+    }
+    .submit1:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Feedback Form</h1>
+    <div id="box">
+     <div >
+        <label for="">Feedback Type:</label><br>
+        <select name="" class="input1">
+            <option value="">Compliement</option>
+        </select><br><br>
+        <label for="">Message </label><br>
+        <input type="text" class="input2"> <br><br>
+        <label for="">Website Rating:</label><br>
+        <input type="radio" class="round"><label for="">Excellent</label> <input type="radio" class="round"><label for="">Good</label>
+        <input type="radio" class="round"><label for="">Average</label> <input type="radio" class="round"><label for="">Poor</label> <br><br>
+        <label for="">Age(10-100):</label><br>
+        <input type="number" class="input1"><br><br>
+        <label for="">Email:</label><br>
+        <input type="email" class="input1"><br><br>
+        <label for="">Password (min. 8 character):</label><br>
+        <input type="password" class="input1"><br><br>
+        <label for="">Website Url (Optional):</label><br>
+        <input type="url" class="input1"><br><br>
+        <input type="checkbox" name="" id="">
+        <label for="">I agree to the terms and conditions</label><br>
+        <div id="sub">
+        <input  class="submit1" type="submit">
+        </div>
+     </div>
+    </div>
+</body>
+</html>

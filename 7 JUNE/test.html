@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container>div{
+        width: 300px;
+        height: 200px;
+        border: 2px solid rgb(4, 4, 5);
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="first"></div>
+        <div id="seconed"></div>
+        <div id="third"></div>
+    </div>
+
+    <button id="roll">Roll</button>
+</body>
+<script>
+    let Dice=document.getElementById("roll")
+    let first=document.getElementById("first")
+    let secnd=document.getElementById("seconed")
+    let thrd=document.getElementById("third")
+
+
+function eventClick(){
+    let num1=Math.floor((Math.random()*6)+1)
+    let num2=Math.floor((Math.random()*6)+1)
+    let num3=Math.floor((Math.random()*6)+1)
+    first.textContent=num1;
+    secnd.textContent=num2;
+    thrd.textContent=num3;
+
+    if((num1 > num2 && num3)){
+        first.style.backgroundColor="green"
+    }
+    else{
+        first.style.backgroundColor="white"
+    }
+    if((num2 > num1 && num3)) {
+        secnd.style.backgroundColor="green"
+    } else{
+        secnd.style.backgroundColor="white"
+    }
+    if((num3 > num2 && num1)) {
+        thrd.style.backgroundColor="green"
+    } else{
+        thrd.style.backgroundColor="white"
+    }
+
+    if(num1==num2){
+        first.style.backgroundColor="yellow"
+        secnd.style.backgroundColor="yellow"
+    }
+    if(num2==num3){
+        thrd.style.backgroundColor="yellow"
+        secnd.style.backgroundColor="yellow"
+    }
+    if(num1==num3){
+        first.style.backgroundColor="yellow"
+        thrd.style.backgroundColor="yellow"
+    }
+}
+
+
+
+    Dice.addEventListener("click", eventClick)
+</script>
+</html>

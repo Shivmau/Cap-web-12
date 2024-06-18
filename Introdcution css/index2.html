@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table , th , td , tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table tr th{
+        width: 250px;
+        height: 30px;
+    }
+    table tr td{
+        width: 250px;
+        height: 30px;
+        text-align: center;
+    }
+    .green th{
+        background-color: green;
+        color: white;
+    }
+    .last td{
+        background-color: rgb(230,230,230);
+    }
+
+    table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <table>
+     <tr class="green">
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price per Unit</th>
+        <th>Description</th>
+        <th>Total Price</th>
+      <tr>
+        <td>Product 1</td>
+        <td>2</td>
+        <td>$10</td>
+        <td>This is product 1</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>2</td>
+        <td>$20</td>
+        <td>This is product 2</td>
+        <td>$40</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>2</td>
+        <td>$50</td>
+        <td>This is product 3</td>
+        <td>$100</td>
+      </tr>
+      <tr class="last">
+       <td colspan="4">Sum</td>
+       
+       <td>$160</td>
+      </tr>
+    </table>
+</body>
+</html>
