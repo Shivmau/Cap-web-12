@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: auto;
+        border: 1px solid black;
+        padding: 10px;
+    }
+    #main>div{
+        height: 100px;
+        width: 100px;
+        
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <div id="main">
+    <div id="dice1"></div>
+    <div id="dice2"></div>
+    <div id="dice3"></div>
+    
+    </div>
+    <button id="roller">Rolle the dice</button>
+</body>
+<script>
+    let d1=document.getElementById("dice1")
+    let d2=document.getElementById("dice2")
+    let d3=document.getElementById("dice3")
+
+    let roller=document.getElementById("roller");
+
+    let d1num=()=>{
+        let num=Math.floor(Math.random()*6)+1;
+        // console.log(num)
+        d1.textContent=num;
+        d1.style.alignContent="center";
+    }
+
+    let d2num=()=>{
+        let num=Math.floor(Math.random()*6)+1;
+        // console.log(num)
+        d2.textContent=num;
+        d2.style.alignContent="center";
+    }
+
+    let d3num=()=>{
+        let num=Math.floor(Math.random()*6)+1;
+        // console.log(num)
+        d3.textContent=num;
+        d3.style.alignContent="center";
+        console.log(num)
+    }
+
+    
+    roller.addEventListener("click",()=>{
+        d1num();
+        d2num();
+        d3num();
+
+
+
+        
+        
+        // if(d1num.value >d2num.value ){
+        //    d1.style.backgroundColor="green"
+        // } 
+        // else if(d2num.value > d1num.value && d3num.value){
+        //     d2.style.backgroundColor="green"
+        // } else if(d3num.value > d2num.value && d1num.value){
+        //     d2.style.backgroundColor="green"
+        // }
+    })
+</script>
+</html>

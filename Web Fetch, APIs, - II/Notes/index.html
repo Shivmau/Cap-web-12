@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // const data=[
+    //     {name:"john", age:28},
+    //     {name:"Alice", age:30},
+    //     {name:"Bob", age:52}
+    // ]
+
+    // const sortData=data.sort((a,b)=>a.age-b.age);
+    // console.log(sortData)
+
+    // const numbers=[10,15,20,25,30];
+    // const filterNumber=numbers.filter((num)=> num>20);
+    // console.log(filterNumber)
+
+
+    // fetch("https://fakestoreapi.com/products")
+    // .then(response=>response.json())
+    // .then(data=>{
+    //     const sortData=data.filter((products=>products.category === 'electronics'));
+    //     console.log(sortData)
+    // })
+
+    // .catch ((error=>console.log("errof",error)))
+
+
+
+
+
+    // const numbers=[10,15,20,25,30];
+
+    // const filterNumber=numbers.filter((num)=>num%2==0);
+    // console.log(filterNumber)
+
+    
+// Assuming data is fetched from the API
+const pageSize = 10;
+let currentPage = 1;
+
+function fetchPage(page) {
+  fetch(`https://fakestoreapi.com/products?page=${page}&pageSize=${pageSize}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(`Page ${page}:`, data);
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+// Fetch the first page
+fetchPage(currentPage);
+
+// Simulate navigating to the next page
+currentPage++;
+fetchPage(currentPage);
+
+
+</script>
+
+</html>
