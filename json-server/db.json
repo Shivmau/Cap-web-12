@@ -1,0 +1,32 @@
+{
+  "tickets": [
+    {
+      "title": "task1",
+      "description": "description for task1",
+      "status": "submit",
+      "dueDate": "2024-06-02",
+      "id": 1
+    },
+    {
+      "title": "task2",
+      "description": "description for task2",
+      "status": "In Progress",
+      "dueDate": "2024-06-05",
+      "id": 2
+    },
+    {
+      "title": "task3",
+      "description": "description for task3",
+      "status": "in pending",
+      "dueDate": "2024-06-11",
+      "id": 3
+    },
+    {
+      "title": "task4",
+      "description": "description for task4",
+      "status": "in pending",
+      "dueDate": "2024-06-25",
+      "id": 4
+    }
+  ]
+}
