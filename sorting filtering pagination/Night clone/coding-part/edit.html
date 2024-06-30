@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="title">
+    <button id="sub">submit</button>
+</body>
+<script>
+    let url="http://localhost:3000/products"
+ 
+
+    let submit=document.getElementById("sub")
+    submit.addEventListener("click",function(){
+        edittitle()
+    })
+
+    async function edittitle(){
+        
+        let id=localStorage.getItem("EditId")
+        
+        let title=document.getElementById("title").value;
+
+
+        let obj={
+           title
+        }
+
+        let res=await fetch(`${url}/${id}`,{
+            method:"PATCH",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(obj)
+        });
+
+        let data=await res.json()
+
+        window.location.href="index.html"
+        
+    }
+
+</script>
+</html>

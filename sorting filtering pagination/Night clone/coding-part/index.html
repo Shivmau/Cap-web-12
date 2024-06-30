@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+    }
+
+    #container div{
+        border: 2px solid;
+    }
+
+    #container div img{
+        width: 100%;
+    }
+
+    #page{
+        gap:5px ;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         width: 3%;
+         margin: auto;
+         padding: 50px;
+    }
+
+
+</style>
+<body>
+   <header>
+    <a href="index.html">HOME</a>
+    <a href="create.html">CREATE</a>
+   </header>
+
+    <select name="" id="sort">
+        <option value="">sort by price</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Dscending</option>
+    </select>
+
+    <select name="" id="filter">
+        <option value="">category</option>
+        <option value="electronics">electronic</option>
+        <option value="men's clothing">men's clothing</option>
+        <option value="women's clothing">women's clothing</option>
+        <option value="jewelery">jewellery</option>
+    </select>
+    <div id="container"></div>
+
+   <div id="page"></div>
+</body>
+<script src="index.js"></script>
+</html>

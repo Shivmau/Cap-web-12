@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="title" id="input1">
+    <button id="sub">Submit</button>
+</body>
+<script>
+    let url="http://localhost:3000/tasks"
+
+    let submit=document.getElementById("sub")
+    submit.addEventListener("click",function(){
+
+        editData();
+
+        
+    })
+
+    async function editData(){
+        let id=localStorage.getItem("EditId")
+
+        let input=document.getElementById("input1").value;
+
+        let obj={
+            title:input
+        }
+
+        let res=await fetch(`${url}/${id}`,{
+            method:"PATCH",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(obj)
+
+        })
+
+        let data=res.json()
+
+        
+        window.location.href="index.html"
+    }
+    
+</script>
+</html>

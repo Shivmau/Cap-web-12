@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "title": "Task1",
+      "description": "Description for Task 2",
+      "status": "In Progress",
+      "dueDate": "2024-06-15T14:30:00"
+    },
+    {
+      "id": 3,
+      "title": "Task2",
+      "description": "Description for Task 3",
+      "status": "Open",
+      "dueDate": "2024-06-20T10:00:00"
+    },
+    {
+      "title": "Task3",
+      "description": "description for task3",
+      "status": "In Progress",
+      "dueDate": "2024-06-26",
+      "id": 4
+    },
+    {
+      "title": "Task4",
+      "description": "description for task5",
+      "status": "In Progress",
+      "dueDate": "2024-06-19",
+      "id": 5
+    },
+    {
+      "title": "Task5",
+      "description": "description for task6",
+      "status": "Closed",
+      "dueDate": "2024-06-25",
+      "id": 6
+    }
+  ]
+}

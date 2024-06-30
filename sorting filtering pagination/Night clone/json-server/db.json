@@ -1,0 +1,97 @@
+{
+  "products": [
+    {
+      "id": 10,
+      "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "price": 109,
+      "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 470
+      }
+    },
+    {
+      "id": 11,
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price": 109,
+      "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 319
+      }
+    },
+    {
+      "id": 16,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 29.95,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 340
+      }
+    },
+    {
+      "id": 17,
+      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "price": 39.99,
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 679
+      }
+    },
+    {
+      "id": 18,
+      "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "price": 9.85,
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 130
+      }
+    },
+    {
+      "id": 19,
+      "title": "Opna Women's Short Sleeve Moisture",
+      "price": 7.95,
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 146
+      }
+    },
+    {
+      "title": "ere",
+      "image": "dfd",
+      "price": "454",
+      "category": "shop",
+      "id": 21
+    },
+    {
+      "title": "dfdd",
+      "image": "dfd",
+      "price": "454",
+      "category": "dfsdafd",
+      "id": 22
+    },
+    {
+      "title": "tiltel2",
+      "image": "data:image/png;base64,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",
+      "price": "599",
+      "category": "city",
+      "id": 23
+    }
+  ]
+}
